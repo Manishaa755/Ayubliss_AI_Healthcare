@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="../static/Logo.jpg" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../static/assets/img/apple-icon.png"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"/>
+      <script src="https://cdn.tailwindcss.com"></script>
+   <title>AyuBliss</title>
+  </head>
+  <style>
+    .developer {
+      text-align: center;
+      margin: 0 10px; /* Adjust margin as needed */
+    }
+    
+    .developer img {
+      width: 250px; /* Adjust image width as needed */
+      height: 55%; /* Maintain aspect ratio */
+    }
+    .px-4 {
+      padding-left: 3rem;
+      padding-right: -4rem;
+  }
+</style>
+  <body class=" antialiased ">
+
+    <!--  Navigation Bar-->
+     <nav class="flex items-center text-black ">
+         <div class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 shadow-xl ">
+             <a href="{{ url_for('index') }}"><img src="static/Logo.jpg" class="w-20 cursor-pointer"></a>
+        <ul class="flex-1 text-center text-black">
+            <li class="list-none inline-block px-5 text-lg leading-lg hover:underline hover:bg-gray-200 hover:font-bold hover:rounded-full"><a href="{{ url_for('index') }}" class="no-underline px-2">Home</a></li>
+            <li class="list-none inline-block px-5 text-lg leading-lg hover:underline hover:bg-gray-200 hover:font-bold hover:rounded-full"><a href="{{ url_for('signin') }}" class="no-underline px-2">Services</a></li>
+            <li class="list-none inline-block px-5 text-lg leading-lg hover:underline hover:bg-gray-200 hover:font-bold hover:rounded-full"><a href="{{ url_for('faq') }}" class="no-underline px-2">FAQs</a></li>
+
+            </a>
+              </li>
+          </ul>
+             <a href="{{ url_for('signin') }}">
+                  <button class="bg-black text-white active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 rounded-full px-6" type="button" style="transition: all 0.15s ease 0s;"> Sign In </button>
+                 </a>
+         </div>
+         </nav>
+
+    <main>
+        <div class= "relative pt-20 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;" >
+            <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("/static/background.jpg"); background-repeat: no-repeat;background-size: cover;'>
+            <span class="w-full h-full absolute  "></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="pr-12">
+                <h1 class="pt-20 font-bold text-5xl text-black">
+                  AYUBLISS
+                </h1>
+                  <br><br>
+                <p class="mt-4 text-lg text-black">
+                  <b>DISEASE PREDICTION
+                      <br>&<br> AYURVEDIC TREATMENT RECOMMENDATION PLATFORM</b>
+                </p>
+                  <br><br>
+                  <center>
+                      <a href="{{ url_for('signin') }}">
+                      <button class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-8 py-2 rounded outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 rounded-full transition duration-150
+                          ease-in-out bg-gradient-to-r from-green-400 to-blue-500 hover:from-gray-500 hover:to-gray-200 ..."
+                        type="button" id="beginButton"
+                        style="transition: all 0.15s ease 0 s;">
+                        Begin Your Journey Today
+                      </button></a>
+                  </center>
+                    <br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px;">
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-300 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full md:w-5/12 px-4 text-center">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <i class="fas fa-award"></i>
+                </div>
+                <a href="{{ url_for('service') }}">
+                  <h6 class="text-xl font-semibold">Predicting Symptoms</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Our advanced model predicts <br> <b>Migraine, Gastric, Diarrhea & Arthritis </b> <br>from symptoms.
+                    This personalized service empowers users to identify potential health issues and
+                    seek medical attention promptly, ultimately leading to better health outcomes.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-5/12 px-4 text-center">
+            <div class="relative flex flex-col min-w-0 break-words bg-bg-green-800 w-full mb-8 shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <i class="fas fa-retweet"></i>
+                </div>
+                <a href="{{ url_for('service') }}">
+                  <h6 class="text-xl font-semibold ">Recommending Ayurvedic Medicine</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Our Ayurvedic medicine recommendation system suggests personalized,
+                    natural remedies based on individual symptoms. This brings traditional knowledge to the modern world,
+                    offering a holistic approach to health that promotes well-being for all.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+                
+              
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+
+      <!--SECTION 03-->
+      <section class="pb-20 relative bg-blueGray-200">
+        <div class="container mx-auto" style='padding-top: 7%;'>
+          <div class="flex justify-center">
+            <div class="developer">
+              <img src="static/Yunus.jpg" />
+              <h2>Yunus Kapdawala</h2>
+              <p>Frontend Developer</p>
+            </div>
+            <div class="developer">
+              <img src="static/mani.jpeg" />
+              <h2>Manisha Batra</h2>
+              <p>Backend Developer</p>
+            </div>
+            <div class="developer">
+              <img src="static/unnati.jpg" />
+              <h2>Unnati Mishra</h2>
+              <p>ML Developer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+        <!--SECTION 03-->
+      
+      <section class="pb-20 relative block bg-gray-900">
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-900 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64 bg-green">
+          <div class="flex flex-wrap text-center justify-center bg-blend-color-burn">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-3xl font-semibold text-white">Register Today for a Personalized Experience</h2><br>
+              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+               We are committed to providing our users
+                  with the most personalized and effective healthcare experience possible.
+                  To get started, simply register for our services,
+                  and gain access to our powerful disease prediction and Ayurvedic medicine recommendation systems.
+                  By inputting your symptoms and using our advanced machine learning algorithms,
+                  you can receive accurate and reliable disease predictions,
+                  and natural remedies that can be easily accessed from home. <br>
+              </p>
+                <br>
+                <center> <a href="{{ url_for('register') }}">
+                      <button class=" text-xs font-bold uppercase px-4 py-2 rounded outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 rounded-full transition duration-150
+                          ease-in-out bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ..."
+                        type="button"
+                        style="transition: all 0.15s ease 0s;">
+                        Register
+                      </button></a></center>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+    <!--  Main section-->
+
+    <!--  Footer section-->
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;"
+      >
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0" >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold">AYUBLISS</h4>
+
+          </div>
+     
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+   <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+        const beginButton = document.getElementById("beginButton");
+        beginButton.addEventListener("click", function() {
+        window.location.href = "signin.html";
+});
+    }
+  </script>
+  </body>
+
+</html>
